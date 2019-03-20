@@ -24,13 +24,28 @@ class _HomeFragmentState extends State<HomeFragment> {
           title: Row(
 						mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
-              ClipOval(
-                child: Image.asset(
-                  'images/noface.gif',
-                  width: 30.0,
-                  height: 30.0,
-                ),
-              ),
+              Stack(
+								//alignment: AlignmentDirectional.topEnd,
+								alignment: Alignment(1.5, -1.3),
+								children: <Widget>[
+									ClipOval(
+										child: Image.asset(
+											'images/noface.gif',
+											width: 30.0,
+											height: 30.0,
+										),
+									),
+									Container(
+										width: 8.0,
+										height: 8.0,
+										decoration: BoxDecoration(
+											color: Colors.redAccent,
+											shape: BoxShape.circle,
+											border: Border.all(color: Colors.white70)
+										),
+									)
+								],
+							),
               Container(
                 child: Icon(
                   Icons.search,
@@ -246,7 +261,7 @@ class _HomeFragmentState extends State<HomeFragment> {
 
 									//list
                   Container(
-										height: 500.0,
+										height: 550.0,
 										margin: EdgeInsets.only(top: 10.0),
 										child: GridView.count(
 											physics: NeverScrollableScrollPhysics(),
@@ -257,9 +272,26 @@ class _HomeFragmentState extends State<HomeFragment> {
 												Column(
 													crossAxisAlignment: CrossAxisAlignment.start,
 													children: <Widget>[
-														ClipRRect(
-															borderRadius: BorderRadius.all(Radius.circular(6.0)),
-															child: Image.network('http://pbl6l57ki.bkt.clouddn.com/FtRpZQ9m6IDHp0-IDKNRaRUIX9sr', fit: BoxFit.cover, width: 190.0,),
+														Stack(
+															alignment: AlignmentDirectional.bottomStart,
+															children: <Widget>[
+																ClipRRect(
+																	borderRadius: BorderRadius.all(Radius.circular(6.0)),
+																	child: Image.network('http://pbl6l57ki.bkt.clouddn.com/FtRpZQ9m6IDHp0-IDKNRaRUIX9sr', fit: BoxFit.cover, width: 190.0,),
+																),
+																Container(
+																	color: Colors.black38,
+																	padding: EdgeInsets.all(5.0),
+																	child: Row(
+																		mainAxisAlignment: MainAxisAlignment.spaceBetween,
+
+																		children: <Widget>[
+																			Text('哈哈', style: TextStyle(color: Colors.white),),
+																			Text('嘻嘻', style: TextStyle(color: Colors.white),),
+																		],
+																	),
+																)
+															],
 														),
 														Container(
 															padding: EdgeInsets.only(top: 10.0),
@@ -280,9 +312,26 @@ class _HomeFragmentState extends State<HomeFragment> {
 												Column(
 													crossAxisAlignment: CrossAxisAlignment.start,
 													children: <Widget>[
-														ClipRRect(
-															borderRadius: BorderRadius.all(Radius.circular(6.0)),
-															child: Image.network('http://pbl6l57ki.bkt.clouddn.com/FtRpZQ9m6IDHp0-IDKNRaRUIX9sr'),
+														Stack(
+															alignment: AlignmentDirectional.bottomStart,
+															children: <Widget>[
+																ClipRRect(
+																	borderRadius: BorderRadius.all(Radius.circular(6.0)),
+																	child: Image.network('http://pbl6l57ki.bkt.clouddn.com/FtRpZQ9m6IDHp0-IDKNRaRUIX9sr', fit: BoxFit.cover, width: 190.0,),
+																),
+																Container(
+																	color: Colors.black38,
+																	padding: EdgeInsets.all(5.0),
+																	child: Row(
+																		mainAxisAlignment: MainAxisAlignment.spaceBetween,
+
+																		children: <Widget>[
+																			Text('哈哈', style: TextStyle(color: Colors.white),),
+																			Text('嘻嘻', style: TextStyle(color: Colors.white),),
+																		],
+																	),
+																)
+															],
 														),
 														Container(
 															padding: EdgeInsets.only(top: 10.0),
@@ -303,9 +352,26 @@ class _HomeFragmentState extends State<HomeFragment> {
 												Column(
 													crossAxisAlignment: CrossAxisAlignment.start,
 													children: <Widget>[
-														ClipRRect(
-															borderRadius: BorderRadius.all(Radius.circular(6.0)),
-															child: Image.network('http://pbl6l57ki.bkt.clouddn.com/FtRpZQ9m6IDHp0-IDKNRaRUIX9sr'),
+														Stack(
+															alignment: AlignmentDirectional.bottomStart,
+															children: <Widget>[
+																ClipRRect(
+																	borderRadius: BorderRadius.all(Radius.circular(6.0)),
+																	child: Image.network('http://pbl6l57ki.bkt.clouddn.com/FtRpZQ9m6IDHp0-IDKNRaRUIX9sr', fit: BoxFit.cover, width: 190.0,),
+																),
+																Container(
+																	color: Colors.black38,
+																	padding: EdgeInsets.all(5.0),
+																	child: Row(
+																		mainAxisAlignment: MainAxisAlignment.spaceBetween,
+
+																		children: <Widget>[
+																			Text('哈哈', style: TextStyle(color: Colors.white),),
+																			Text('嘻嘻', style: TextStyle(color: Colors.white),),
+																		],
+																	),
+																)
+															],
 														),
 														Container(
 															padding: EdgeInsets.only(top: 10.0),
@@ -326,9 +392,26 @@ class _HomeFragmentState extends State<HomeFragment> {
 												Column(
 													crossAxisAlignment: CrossAxisAlignment.start,
 													children: <Widget>[
-														ClipRRect(
-															borderRadius: BorderRadius.all(Radius.circular(6.0)),
-															child: Image.network('http://pbl6l57ki.bkt.clouddn.com/FtRpZQ9m6IDHp0-IDKNRaRUIX9sr'),
+														Stack(
+															alignment: AlignmentDirectional.bottomStart,
+															children: <Widget>[
+																ClipRRect(
+																	borderRadius: BorderRadius.all(Radius.circular(6.0)),
+																	child: Image.network('http://pbl6l57ki.bkt.clouddn.com/FtRpZQ9m6IDHp0-IDKNRaRUIX9sr', fit: BoxFit.cover, width: 190.0,),
+																),
+																Container(
+																	color: Colors.black38,
+																	padding: EdgeInsets.all(5.0),
+																	child: Row(
+																		mainAxisAlignment: MainAxisAlignment.spaceBetween,
+
+																		children: <Widget>[
+																			Text('哈哈', style: TextStyle(color: Colors.white),),
+																			Text('嘻嘻', style: TextStyle(color: Colors.white),),
+																		],
+																	),
+																)
+															],
 														),
 														Container(
 															padding: EdgeInsets.only(top: 10.0),
@@ -349,9 +432,26 @@ class _HomeFragmentState extends State<HomeFragment> {
 												Column(
 													crossAxisAlignment: CrossAxisAlignment.start,
 													children: <Widget>[
-														ClipRRect(
-															borderRadius: BorderRadius.all(Radius.circular(6.0)),
-															child: Image.network('http://pbl6l57ki.bkt.clouddn.com/FtRpZQ9m6IDHp0-IDKNRaRUIX9sr'),
+														Stack(
+															alignment: AlignmentDirectional.bottomStart,
+															children: <Widget>[
+																ClipRRect(
+																	borderRadius: BorderRadius.all(Radius.circular(6.0)),
+																	child: Image.network('http://pbl6l57ki.bkt.clouddn.com/FtRpZQ9m6IDHp0-IDKNRaRUIX9sr', fit: BoxFit.cover, width: 190.0,),
+																),
+																Container(
+																	color: Colors.black38,
+																	padding: EdgeInsets.all(5.0),
+																	child: Row(
+																		mainAxisAlignment: MainAxisAlignment.spaceBetween,
+
+																		children: <Widget>[
+																			Text('哈哈', style: TextStyle(color: Colors.white),),
+																			Text('嘻嘻', style: TextStyle(color: Colors.white),),
+																		],
+																	),
+																)
+															],
 														),
 														Container(
 															padding: EdgeInsets.only(top: 10.0),
